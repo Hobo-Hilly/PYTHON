@@ -15,6 +15,8 @@ print 'Connection address:', addr
 while 1:
     data = conn.recv(BUFFER_SIZE)
     if not data: break
-    print "received data:", data
+    print 'received data:', data
     conn.send(data)
 conn.close()
+
+
